@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+    <ion-button [routerLink]="['/home']">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+    <p align="center">
+      <ion-subtitle>Agregar Contacto</ion-subtitle>
+    </p>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-item>
+    <ion-input placeholder="Nombre" #titulo></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Telefono" #telefono></ion-input>
+  </ion-item>      
+  <ion-item>
+    <ion-input placeholder="Correo Electronico" #correo></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Facebook" #facebook></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Linkedin" #linkedin></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Twitter" #twitter></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Url foto"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="onAgregar(titulo, imagen, correo, facebook, linkedin, twitter)">Agregar
+  </ion-button>      
+</ion-content>
